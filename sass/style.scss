@@ -45,6 +45,11 @@ body {
 }
 
 .front {
+  transition: 250ms ease-in;
+  .thumbnail {
+    border-radius: $br;
+  }
+
   .name {
     margin-block: 0.5em;
   }
@@ -70,4 +75,30 @@ body {
 
 .back {
   display: none;
+}
+
+.background {
+  background: #234;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  transform: scale(0.2, 0.9);
+  border-radius: $br;
+  opacity: 0;
+}
+
+.game:hover {
+  .front {
+    transform: translateY(-30%) scale(0.8);
+
+    .streamers {
+      opacity: 0;
+    }
+  }
+  .background {
+    transition: transform 200ms cubic-bezier(0.21, 1, 0.81, 1),
+      opacity 100ms linear;
+    transform: scale(1.4, 1.2);
+    opacity: 1;
+  }
 }
