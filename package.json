@@ -1,0 +1,23 @@
+{
+  "name": "animated-card",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sass --watch sass:css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tuvedunyel/animated-card.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tuvedunyel/animated-card/issues"
+  },
+  "homepage": "https://github.com/Tuvedunyel/animated-card#readme",
+  "dependencies": {
+    "sass": "^1.38.1"
+  }
+}
