@@ -1,1 +1,14 @@
 @use 'base';
+$clr-dark: hsl(200 19% 6%);
+$clr-dark: hsl(0 0% 100%);
+$clr-accent: hsl(14 100% 44%);
+$clr-accent-dark: hsl(14 100% 32%);
+$clr-secondary: hsl(217 100% 32%);
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: $clr-dark;
+  color: $clr-light;
+}
