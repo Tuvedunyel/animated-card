@@ -4,6 +4,7 @@ $clr-light: hsl(0 0% 100%);
 $clr-accent: hsl(14 100% 44%);
 $clr-accent-dark: hsl(14 100% 32%);
 $clr-secondary: hsl(217 100% 32%);
+$br: 0.5em;
 
 body {
   min-height: 100vh;
@@ -11,4 +12,62 @@ body {
   place-items: center;
   background: $clr-dark;
   color: $clr-light;
+}
+
+.img {
+  max-width: 100%;
+}
+
+.game {
+  position: relative;
+  width: 12.5em;
+}
+
+.streamers {
+  display: flex;
+
+  img {
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+  }
+}
+
+.rank {
+  position: absolute;
+  top: 0;
+  right: 1em;
+  background: hsl(0 0% 0% / 0.65);
+  font-weight: 700;
+  font-size: 1.125rem;
+  padding: 0.5em 0.5em 0.75em;
+  clip-path: polygon(100% 0%, 100% 100%, 50% 85%, 0 100%, 0 0);
+}
+
+.front {
+  .name {
+    margin-block: 0.5em;
+  }
+
+  .stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .streamers img {
+    border: 2px solid $clr-dark;
+
+    &:first-of-type {
+      transform: translateX(50%);
+      z-index: 1;
+    }
+    &:nth-of-type(2) {
+      transform: translateX(25%);
+    }
+  }
+}
+
+.back {
+  display: none;
 }
